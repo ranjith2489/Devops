@@ -1,80 +1,3 @@
-abhilashreddy1, 7:41 PM
-hi
-
-
-abhilashreddy1, 7:47 PM
-
-
-
-7:51 PM
-Create a Jenkins file templates for angular/ionic Maven work that will do the following:
-* create Jenkins job (mvn)
-* Set "Discard old builds values"
-* set GitHub project url
-* set Source Control Management options
-    * builds from branches
-* set webhooks (as needed)
-* Set Build Environments (as needed)
-* Set MVN options
-* Set Post Steps
-* Set Post Build Options
-* Set email options
-
-
-2)
-
-Create a Jenkins file templates for angular/ionic Unit Test work that will do the following:
-* create Jenkins job (freestyle)
-* Set "Discard old builds values"
-* set GitHub project url
-* set Source Control Management options
-    * Unit Test (shah)
-* set webhooks (as needed)
-* Set Build Environments (as needed)
-* npm commands from shell script plugin
-* Set Post Steps
-* Set Post Build Options
-* Set email options
-
-Create a Jenkins file templates for angular/ionic Maven work that will do the following:
-* create Jenkins job (mvn)
-* Set "Discard old builds values"
-* set GitHub project url
-* set Source Control Management options
-    * builds from branches
-* set webhooks (as needed)
-* Set Build Environments (as needed)
-* Set MVN options
-* Set Post Steps
-* Set Post Build Options
-* Set email options
-
-
-2)
-
-Create a Jenkins file templates for angular/ionic Unit Test work that will do the following:
-* create Jenkins job (freestyle)
-* Set "Discard old builds values"
-* set GitHub project url
-* set Source Control Management options
-    * Unit Test (shah)
-* set webhooks (as needed)
-* Set Build Environments (as needed)
-* npm commands from shell script plugin
-* Set Post Steps
-* Set Post Build Options
-* Set email options
-
-
-abhilashreddy1, 7:54 PM
-
-
-
-abhilashreddy1, 8:01 PM
-https://<your-domain-name>/web-hook/
-
-
-abhilashreddy1, 8:23 PM
 pipeline {
 	agent {
 		node { label 'Linux' // allocate a node/slave ex: '' or '' or 'master'
@@ -82,7 +5,7 @@ pipeline {
 		}				
 	stages {				
 		stage('Build') {
-            steps {	// Specify nodejs version
+            steps {	// Secify nodejs version
 						nodejs(nodeJSInstallationName:'NodeJS6.9.1') {
 						sh ' mkdir ${WORKSPACE}/dlnpm '	
 						sh ' npm config set tmp ${WORKSPACE}/dlnpm '
